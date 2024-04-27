@@ -129,7 +129,7 @@ align-items: center;
 
 .weather-info .atmos {
   display: flex;
-
+ gap: 2px;
   flex-wrap: wrap;
   justify-content: space-around;
 }

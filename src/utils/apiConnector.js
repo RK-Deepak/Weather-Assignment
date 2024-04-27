@@ -21,7 +21,7 @@ const apiConnector=async(city,coordinates)=>
 
       params,
       headers: {
-        'X-RapidAPI-Key': '124e2187dfmsh1c537baf3656d0ap1f3057jsn9266bc5df074',
+        'X-RapidAPI-Key': import.meta.env.VITE_APP_KEY,
         'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
       }
     };
