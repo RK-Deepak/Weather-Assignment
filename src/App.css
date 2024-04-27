@@ -146,8 +146,11 @@ align-items: center;
    gap: 10px;
    background-color:#fc25f5;
    border-radius: 10px;
-   font-weight: 500;
-   color: black;
+   font-weight: 700;
+   color: white;
+   display: flex;
+   flex-direction: column;
+    
 }
 
 .forecast 

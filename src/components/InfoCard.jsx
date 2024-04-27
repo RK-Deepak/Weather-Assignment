@@ -39,11 +39,12 @@ const InfoCard = ({weatherInfo}) => {
 
            </div>
            <div className="atmos">
-               <div className='info'>Humidity:{weatherInfo && weatherInfo.current_observation.atmosphere.humidity}%</div>
-               <div className='info'>Visibility:{weatherInfo && weatherInfo.current_observation.atmosphere.visibility}miles</div>
-               <div className='info'>Temp:{weatherInfo && Math.floor((weatherInfo.current_observation.condition.temperature -32)*5/9)}°C</div>
-               <div className='info'>Speed:{weatherInfo && weatherInfo.current_observation.wind.speed}m/h</div>
-           </div>
+    <div className='info'><span>Humidity:</span> <span className="bold">{weatherInfo && <span>{weatherInfo.current_observation.atmosphere.humidity}%</span>}</span></div>
+    <div className='info'><span>Visibility:</span> <span className="bold">{weatherInfo && <span>{weatherInfo.current_observation.atmosphere.visibility} miles</span>}</span></div>
+    <div className='info'><span>Temp:</span> <span className="bold">{weatherInfo && <span>{Math.floor((weatherInfo.current_observation.condition.temperature -32)*5/9)}°C</span>}</span></div>
+    <div className='info'><span>Speed:</span> <span className="bold">{weatherInfo && <span>{weatherInfo.current_observation.wind.speed} m/h</span>}</span></div>
+</div>
+
            <h1 className='weather-Foreact_headline'>Weather ForeCast</h1>
            <div className="forecast">
               
