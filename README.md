@@ -1,7 +1,7 @@
 # Project Name
 
 Weather app ,in it i use rapid api Yahoo Api which has limit of 100 request/month,so if by any chance limits get over u can access rapid api and subscribe to api or can contact me...
-vermadeepak626@gmail.com
+vermadeepak626@gmail.com.I intentionally put api key in github because of limit 
 ## Table of Contents
 
 - [Installation](#installation)
