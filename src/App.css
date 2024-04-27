@@ -1,0 +1,224 @@
+.App
+{
+  background-image: linear-gradient(135deg, #3498db, #99e76c);
+padding: 20px;
+height: fit-content;
+min-height: 100vh;
+}
+
+
+
+.main-headline 
+{
+  font-size:xx-large;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  color: #6a11cb;
+}
+
+.indexPart 
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+align-items: center;
+}
+.button_part 
+{
+  width: fit-content;
+  margin: auto;
+  display:flex;
+  gap: 4px;
+}
+.btn 
+{
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 16px;
+  font-weight: semibold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #98ec85;
+}
+.btn:hover
+{
+  background-color: yellowgreen;
+}
+.btn:active 
+{
+  background-color: red;
+}
+
+.indexPart h1 
+{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aquamarine;
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(80deg, #cb1111, #fc25f5);
+  color: #fff;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.weather-info {
+  margin-bottom: 20px;
+}
+.location-info 
+{
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.location-info .locality
+{
+  display: flex ;
+  flex-direction: row;
+  gap: 4px;
+}
+.weather-info > div {
+  margin-bottom: 10px;
+}
+
+.weather-info .location-info span {
+  display: flex;
+  gap:10px;
+
+}
+.weather-info .astronomy 
+{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+ .astronomy .asto{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.weather-info .atmos {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.weather-info .atmos .info {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height: 80px;
+   width: 120px;
+   gap: 10px;
+   background-color:#fc25f5;
+   border-radius: 10px;
+   font-weight: 500;
+   color: black;
+}
+
+.forecast 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.weather-Foreact_headline
+{
+  text-decoration: underline;
+}
+.forecast > div {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid yellow;
+  background-color:chocolate;
+ 
+}
+
+.forecast span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* //search by city */
+
+.form_outer 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.form
+{
+  display: flex;
+  justify-content: center;
+}
+.form input
+{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  margin: 10px 0px;
+}
+
+/* css loader */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  color: #f03355;
+  --_c:no-repeat radial-gradient(farthest-side,currentColor 92%,#0000);
+  background: 
+    var(--_c) 50% 0   /12px 12px,
+    var(--_c) 50% 100%/12px 12px,
+    var(--_c) 100% 50%/12px 12px,
+    var(--_c) 0    50%/12px 12px,
+    var(--_c) 50%  50%/12px 12px,
+    conic-gradient(from 90deg at 4px 4px,#0000 90deg,currentColor 0)
+    -4px -4px/calc(50% + 2px) calc(50% + 2px);
+  animation: l8 1s infinite linear;
+}
+@keyframes l8 {to{transform: rotate(.5turn)}}
